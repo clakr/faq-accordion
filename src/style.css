@@ -1,5 +1,19 @@
-@import 'tailwindcss';
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --color-light-pink: #F8EEFF;
+  --color-white: #FFFFFF;
+  --color-pale-purple: #8B6990;
+  --color-dark-purple: #301534;
+  --color-pink: #AD28EB;
+
+  --breakpoint-lg: 1024px;
+}
 
 :root {
   font-size: 10px;
+  font-family: 'Work Sans', sans-serif;
 }

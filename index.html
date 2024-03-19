@@ -16,8 +16,48 @@
     <script type="module" src="src/main.ts" async></script>
   </head>
   <body>
-    <main>
+    <main class="min-h-[100svh] grid place-items-center bg-light-pink bg-[url(/background-pattern-mobile.svg)] lg:bg-[url(/background-pattern-desktop.svg)] desktop bg-no-repeat bg-contain">
       <h1 class="sr-only"></h1>
+      <article class="w-[calc(100svw-4.8rem)] bg-white rounded-[.8rem] lg:rounded-[1.6rem] p-[2.4rem] lg:p-[4rem] flex flex-col gap-y-[2.4rem] lg:gap-y-[3.2rem] max-w-[60rem]">
+        <section class="flex gap-x-[2.4rem] items-center">
+          <img src="/icon-star.svg" alt="" class="size-[2.4rem] lg:size-[3.5rem]">
+          <h2 class="text-[3.2rem] lg:text-[5.6rem] font-bold">FAQs</h2>
+        </section>
+        <section class="[&>details]:text-[1.4rem] lg:[&>details]:text-[1.6rem] [&>details]:py-[2rem] lg:[&>details]:py-[2.4rem] [&>details]:text-pale-purple [&>details:first-of-type]:pt-[unset] [&>details>summary]:text-dark-purple [&>details>summary]:list-none [&>details>summary]:font-semibold [&>details>summary]:text-[1.6rem] lg:[&>details>summary]:text-[1.8rem] [&>details>summary]:flex [&>details>summary]:justify-between [&>details>summary]:gap-x-[2rem] [&>details>summary]:hover:cursor-pointer hover:[&>details>summary]:text-pink [&>details[open]>summary]:mb-[2rem] lg:[&>details[open]>summary]:mb-[2.4rem] [&>details>summary>img[data-icon=minus]]:hidden [&>details[open]>summary>img[data-icon=minus]]:block [&>details>summary>img[data-icon=plus]]:block [&>details[open]>summary>img[data-icon=plus]]:hidden divide-y divide-light-pink">
+          <details open>
+            <summary>
+              What is Frontend Mentor, and how will it help me?
+              <img src="/icon-plus.svg" alt="" data-icon="plus">
+              <img src="/icon-minus.svg" alt="" data-icon="minus">
+            </summary>
+            Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+          </details>
+          <details>
+            <summary>
+              Is Frontend Mentor free?
+              <img src="/icon-plus.svg" alt="" data-icon="plus">
+              <img src="/icon-minus.svg" alt="" data-icon="minus">
+            </summary>
+            Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.
+          </details>
+          <details>
+            <summary>
+              Can I use Frontend Mentor projects in my portfolio?
+              <img src="/icon-plus.svg" alt="" data-icon="plus">
+              <img src="/icon-minus.svg" alt="" data-icon="minus">
+            </summary>
+            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!
+          </details>
+          <details>
+            <summary>
+              How can I get help if I'm stuck on a challenge?
+              <img src="/icon-plus.svg" alt="" data-icon="plus">
+              <img src="/icon-minus.svg" alt="" data-icon="minus">
+            </summary>
+            The best place to get help is inside Frontend Mentor's Discord community. There's a help  channel where you can ask questions and seek support from other community members.
+          </details>
+        </section>
+      </article>
     </main>
   </body>
 </html>
